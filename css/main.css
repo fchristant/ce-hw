@@ -1,0 +1,35 @@
+html, body {
+  font-family: monospace;
+  padding:0;
+  margin:0;
+}
+
+html {
+  background:#333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hello-world {
+  display: block;
+  padding: 1em;
+  background:#eee;
+  border:1px solid #ccc;
+}
+
+hello-world .name {
+  font-weight: bold;
+}
+
+hello-world .log {
+  background: white;
+  padding: 1em;
+}
+
+#screen_log {
+  display: block;
+  padding: 1em 2em;
+  color:#eee;
+}

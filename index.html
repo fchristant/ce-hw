@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Elements - Hello World</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <div id="instances">
+
+      <hello-world id="hw1" name="Upgraded world!">
+        <p>Hello, <span class="name">World!</span></p>
+        <form class="frm" action="" method="post" accept-charset="UTF-8">
+          <input type="text" class="nameField" value="" />
+          <input type="submit" value="submit" />
+        </form>
+        <ul class="log">
+          <li>SSR init</li>
+        </ul>
+      </hello-world>
+
+      <hello-world id="hw2" name="Upgraded world!">
+        <p>Hello, <span class="name">World!</span></p>
+        <form class="frm" action="" method="post" accept-charset="UTF-8">
+          <input type="text" class="nameField" value="" />
+          <input type="submit" value="submit" />
+        </form>
+        <ul class="log">
+          <li>SSR init</li>
+        </ul>
+        <hello-world id="hw4" name="Nested upgraded world!">
+          <p>Hello, <span class="name">World!</span></p>
+          <form class="frm" action="" method="post" accept-charset="UTF-8">
+            <input type="text" class="nameField" value="" />
+            <input type="submit" value="submit" />
+          </form>
+          <ul class="log">
+            <li>SSR init</li>
+          </ul>
+        </hello-world>
+      </hello-world>
+
+    </div>
+
+    <ul id="screen_log">
+      <li>SSR init</li>
+    </ul>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
